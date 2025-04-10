@@ -6,11 +6,11 @@ function Footer() {
   return (
     <footer className="contact-footer">
       <div className="footer-links">
-        <a href="#" className="footer-link"><Instagram />Instagram</a>
+        <a href="https://www.instagram.com/" className="footer-link"><Instagram />Instagram</a>
         <span>-</span>
-        <a href="#" className="footer-link"><Mail />Mail</a>
+        <a href="mailto:artesanias@gmail.com" className="footer-link"><Mail />Mail</a>
         <span>-</span>
-        <a href="#" className="footer-link"><Phone /> WhatsApp</a>
+        <a href="https://web.whatsapp.com/" className="footer-link"><Phone /> WhatsApp</a>
       </div>
       <p className="footer-copy">© {new Date().getFullYear()} Artesanías por Nico</p>
     </footer>
