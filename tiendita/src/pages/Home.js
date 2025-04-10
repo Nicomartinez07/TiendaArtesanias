@@ -1,6 +1,4 @@
 import React, { useState } from "react"
-import { Search, Instagram, Mail, Phone } from "lucide-react"
-import { Link } from "react-router-dom"
 import "./styles/home.css"
 import producto1  from "../assets/images/producto1.webp"
 import nocheestrellada  from "../assets/images/nocheestrellada.webp"
@@ -27,24 +25,6 @@ export default function Home() {
 
   return (
     <div className="home">
-      {/* Header */}
-      <header className="header">
-        <h1 className="logo">Artesanias</h1>
-
-        <nav className="nav">
-          <Link to="/" className="nav-link active indie">Inicio</Link>
-          <Link to="/products" className="nav-link indie">Productos</Link>
-          <Link to="/about" className="nav-link indie">Sobre nosotros</Link>
-          <Link to="/contact" className="nav-link indie">Contacto</Link>
-        </nav>
-
-        <div className="search-box">
-          <input type="text" placeholder="Buscador" className="search-input" />
-          <Search className="search-icon" />
-        </div>
-      </header>
-
-      {/* Hero Section */}
       {/* Hero Carrusel avanzado */}
       <section className="hero-carousel-3d">
         <div
@@ -77,12 +57,9 @@ export default function Home() {
         </div>
       </section>
 
-
-
-
       {/* Products Section */}
       <section className="products">
-        {Array.from({ length: 7 }).map((_, index) => (
+        {Array.from({ length: 6 }).map((_, index) => (
           <div key={index} className="product-card">
             <div className="product-img-wrapper">
               <img
@@ -95,25 +72,7 @@ export default function Home() {
             <p className="product-price">1000$</p>
           </div>
         ))}
-      </section>
-
-      {/* Footer */}
-      <footer className="footer">
-        <Link to="#" className="footer-link">
-          <Instagram className="footer-icon" />
-          <span>Instagram</span>
-        </Link>
-        <span className="footer-separator">-</span>
-        <Link to="#" className="footer-link">
-          <Mail className="footer-icon" />
-          <span>Mail</span>
-        </Link>
-        <span className="footer-separator">-</span>
-        <Link to="#" className="footer-link">
-          <Phone className="footer-icon" />
-          <span>Whatsapp</span>
-        </Link>
-      </footer>
+      </section>    
     </div>
   )
 }

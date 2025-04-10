@@ -3,56 +3,8 @@
   min-height: 100vh;
   background-color: #ffe8ba;
   font-family: sans-serif;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  border-bottom: 1px solid rgba(30, 30, 30, 0.1);
-}
-
-.logo {
-  font-size: 2rem;
-  font-weight: 500;
-  color: #000000;
-}
-
-.nav {
-  display: flex;
-  gap: 1rem;
-}
-
-.nav-link {
-  background-color: #ffd787;
-  color: #000000;
-  padding: 0.5rem 1.5rem;
-  border-radius: 999px;
-  text-decoration: none;
-}
-
-.nav-link.active {
-  border: 1px solid #000;
-}
-
-.search-box {
-  position: relative;
-}
-
-.search-input {
-  padding: 0.5rem 1rem;
-  border-radius: 999px;
-  border: none;
-  width: 250px;
-}
-
-.search-icon {
-  position: absolute;
-  top: 50%;
-  right: 0.75rem;
-  transform: translateY(-50%);
-  color: rgba(30, 30, 30, 0.7);
+  padding-top: 1px; /* o algo así */
+  margin: 0;
 }
 
 /* Estilo del carrusel */
@@ -179,33 +131,6 @@
   font-weight: bold;
 }
 
-/* Estilo del footer */
-.footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  padding: 1.5rem 2rem;
-  border-top: 1px solid rgba(30, 30, 30, 0.1);
-}
-
-.footer-link {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: #000000;
-  text-decoration: none;
-}
-
-.footer-icon {
-  width: 24px;
-  height: 24px;
-}
-
-.footer-separator {
-  color: #000000;
-}
-
 /* Estilo de fuente */
 .indie {
   font-family: 'Indie Flower', cursive;
@@ -213,23 +138,6 @@
 
 /* Media Queries para dispositivos móviles */
 @media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav {
-    /* Mantenerlos en línea (no en columna) */
-    flex-direction: row;
-    flex-wrap: wrap; /* para que bajen si no entran */
-    justify-content: center;
-    gap: 0.5rem;
-    width: 100%;
-  }
-
-  .search-input {
-    width: 100%;
-  }
 
   .hero-carousel-3d {
     height: 300px;
@@ -254,22 +162,6 @@
 }
 
 @media (max-width: 480px) {
-  .header {
-    padding: 1rem;
-  }
-
-  .logo {
-    font-size: 1.5rem;
-  }
-
-  .nav-link {
-    padding: 0.5rem 1rem;
-  }
-
-  .search-input {
-    width: 100%;
-    padding: 0.5rem;
-  }
 
   .hero-carousel-3d {
     height: 250px;
@@ -283,8 +175,5 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  .footer {
-    flex-direction: column;
-    gap: 1rem;
-  }
+
 }

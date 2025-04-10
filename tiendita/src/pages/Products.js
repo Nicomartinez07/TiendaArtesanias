@@ -1,29 +1,11 @@
 import React from "react"
 import "./styles/products.css"
-import { Link } from "react-router-dom"
-import { Instagram, Mail, Phone } from "lucide-react"
 import producto1  from "../assets/images/producto1.webp"
 import producto2  from "../assets/images/producto2.webp"
 
 export default function Products() {
   return (
     <div className="products-container">
-      {/* Header */}
-      <header className="products-header">
-        <div className="header-inner">
-          <h1 className="logo">Artesanias</h1>
-          <nav className="nav-links">
-            <Link to="/" className="indie nav-link">Inicio</Link>
-            <Link to="/products" className="indie nav-link active">Productos</Link>
-            <Link to="/about" className="indie nav-link">Sobre Nosotros</Link>
-            <Link to="/contact" className="indie nav-link">Contacto</Link>
-          </nav>
-          <div className="search-bar">
-            <input type="search" placeholder="Buscador" />
-          </div>
-        </div>
-      </header>
-
       {/* Main Content */}
       <main className="main-content">
         {/* Most Viewed Products */}
@@ -76,17 +58,6 @@ export default function Products() {
           </div>
         </section>
       </main>
-
-      {/* Footer */}
-      <footer className="footer">
-        <div className="footer-inner">
-          <Link href="#"><Instagram size={20} /><span>Instagram</span></Link>
-          <span>-</span>
-          <Link href="#"><Mail size={20} /><span>Mail</span></Link>
-          <span>-</span>
-          <Link href="#"><Phone size={20} /><span>Whatsapp</span></Link>
-        </div>
-      </footer>
     </div>
   )
 }

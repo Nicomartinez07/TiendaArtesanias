@@ -4,56 +4,12 @@
     min-height: 100vh;
     background-color: #ffe8ba;
     font-family: sans-serif;
-  }
-  
-  .products-header {
-    border-bottom: 1px solid rgba(30, 30, 30, 0.1);
-    padding: 1rem;
-  }
-  
-  .header-inner {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-  }
-  
-  .logo {
-    font-size: 1.875rem;
-    font-weight: bold;
-  }
-  
-  .nav-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-  }
-  .nav-link.active {
-    border: 1px solid #000;
-  }
-  
-  .nav-links a {
-    padding: 0.5rem 1.5rem;
-    border-radius: 9999px;
-    background-color: #ffd787;
-    color: #1e1e1e;
-    text-decoration: none;
-    font-weight: 500;
-  }
-  
-  .search-bar input {
-    padding: 0.5rem 1rem;
-    border: 1px solid rgba(30, 30, 30, 0.1);
-    border-radius: 9999px;
-    width: 100%;
+ 
   }
   
   .main-content {
-    max-width: 1200px;
-    margin: 2rem auto;
+    width: 100%;
+    max-width: 1320px;
     padding: 1rem;
   }
   
@@ -63,7 +19,12 @@
     border-radius: 0.5rem;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     margin-bottom: 2rem;
+  
+    width: 100%;
+    
+    box-sizing: border-box;
   }
+  
   
   .section h2 {
     font-size: 1.25rem;
@@ -102,29 +63,6 @@
     margin-top: 0.5rem;
   }
   
-  .footer {
-    border-top: 1px solid rgba(30, 30, 30, 0.1);
-    padding: 1rem;
-    margin-top: 2rem;
-  }
-  
-  .footer-inner {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .footer-inner a {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    text-decoration: none;
-    color: inherit;
-  }
-
   .indie {
     font-family: 'Indie Flower', cursive;
   }
